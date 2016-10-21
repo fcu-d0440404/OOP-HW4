@@ -10,15 +10,20 @@ public class Main{
 	Scanner scanner = new Scanner(System.in);
 
 	do
-	{
+	{ 
 		System.out.println("Please enter a password: ");
 		a= scanner.next();
-		
+		if(a.compareTo(b)==0)
+		{
+			continue;
+		}
 		System.out.printf(password.encode(a));
-	}while(a!=b);
+		
+		
+	}while(a.compareTo(b)<0);
 		
 	
-	
+	scanner.close();
 	}
 
 }

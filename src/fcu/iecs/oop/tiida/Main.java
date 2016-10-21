@@ -2,15 +2,24 @@ package fcu.iecs.oop.tiida;
 
 import java.util.Scanner;
 
-public class PasswordEncorder {
+public class Main{
 
-	public static void PasswordEncorder(String[] args) {
+	public static void main(String[] args) {
 		
-		String a;
+		
+		NissanTiida number = new NissanTiida();
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Please enter a password");
+		int loop,i=1;
+		System.out.println("Please enter a number: ");
+		loop= scanner.nextInt();
 
+		for(i=1;i<(loop+1);i++){
 		
+			number.tiida();
+		}
+		
+		scanner.close();
 	}
+	
 
 }
